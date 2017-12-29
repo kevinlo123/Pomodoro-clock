@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+* {
+    background-color: #555;
+	color:white;
+	font-family:'Quicksand',sans-serif;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.pomodoro-text {
+    font-size: 2.5rem;
+}
+
+.title-clock-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.fa {
+    color: #2ecc71;
+    margin: 1.7rem 1rem;
+}
+
+.time-set-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+#inc-break , #dec-break , #inc-sesh, #dec-sesh {
+    border: none;
+    font-size: 2rem;
+    outline: none;
+}
+
+.increase-decrease-time:hover {
+    color: #2ecc71;
+    cursor: pointer;
+}
+
+.green {
+    color: #2ecc71;
+}
+
+.set {
+    margin: 1rem 1rem;
+}
+
+.session-start-container {
+    border: 5px solid #2ecc71;
+    border-radius: 50%;
+    height: 25rem;
+    width: 35%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.press-to-start {
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+}
+
+.press-to-start:hover {
+    opacity: .5;
+}
+
+.session-text {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.time-reset-container {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 5rem;
+}
+
+.time {
+    font-size: 4.5rem;
+}
+
+.reset-button {
+    width: 50%;
+    margin: 0 auto;
+    height: 3rem;
+    position: relative;
+    top: 2.5rem;
+}
+/************ MEDIA QUERIES *************/
+
+@media only screen and (max-width : 1100px) {
+    .session-start-container{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width : 950px) {
+    .session-start-container{
+        width: 43%;
+    }
+}
+
+@media only screen and (max-width : 880px) {
+    .session-start-container{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width : 845px) {
+    .session-start-container{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 738px) {
+    .session-start-container{
+        width: 55%;
+        height: 24rem;
+    }
+}
+
+@media only screen and (max-width : 688px) {
+    .session-start-container{
+        width: 60%;
+    }
+    .time-set-container{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width : 620px) {
+    .session-start-container{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width : 585px) {
+    .session-start-container{
+        width: 75%;
+    }
+    .time-set-container{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width : 490px) {
+    .session-start-container{
+        width: 85%;
+        height: 20rem;
+    }
+    .press-to-start{
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width : 460px) {
+    .time-set-container{
+        font-size: 1rem;
+        flex-direction: row;
+    }
+}
+
