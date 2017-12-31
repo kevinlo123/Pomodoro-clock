@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    	<meta charset="utf-8">
-    	<title>Pomodoro Clock</title>
-        <link rel="stylesheet" href="pomodoro.css"/>
-        <script src="https://use.fontawesome.com/f5fb6e9872.js"></script>        
+		<meta charset="utf-8">
+		<title>Pomodoro Clock</title>
+		<link rel="stylesheet" href="pomodoro.css"/>
+		<script src="https://use.fontawesome.com/f5fb6e9872.js"></script>        
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>        		  			
   	</head>
   	<body>		
-        <div class="main-container">
-            <div class="title-clock-container">
-                <h1 class="pomodoro-text">Pomodoro clock</h1>
-                <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
-            </div>
-            <div class="time-set-container">
-                <h2 class="set">
-					<span class="green">Break</span>
-					<span>length</span>
-					<input type="button" id="inc-break" class="increase-decrease-time" value="+"/>
-					<span id="breakNum"> 5 </span> 
-					<input type="button" id="dec-break" class="increase-decrease-time" value="-"/>
-				</h2>
-                <h2 class="set">
-					<span class="green">Session</span> 
-					<span>length</span>
-					<input type="button" id="inc-sesh" class="increase-decrease-time" value="+"/>
-					<span id="seshNum"> 25 </span> 
-					<input type="button" id="dec-sesh" class="increase-decrease-time" value="-"/>
-				</h2>
-            </div>
-            <div class="session-start-container">
-                <input type="button" id="pressStart" class="press-to-start" value="Press to start"/>
-                <h1 id="session-text" class="session-text">Session</h1>
-                <div id="showtime"class="time-reset-container">
-                    <span id="time" class="time">25:<span id="seconds">00</span></span>
-                </div>
-            </div>
-            <audio id="beep" src="http://soundbible.com/mp3/analog-watch-alarm_daniel-simion.mp3"></audio>            
-        </div>
-        <script type="text/javascript" src="pomodoro.js"></script>
+		<div class="main-container">
+		    <div class="title-clock-container">
+			<h1 class="pomodoro-text">Pomodoro clock</h1>
+			<i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
+		    </div>
+		    <div class="time-set-container">
+			<h2 class="set">
+				<span class="green">Break</span>
+				<span>length</span>
+				<input type="button" id="inc-break" class="increase-decrease-time" value="+"/>
+				<span id="breakNum"> 5 </span> 
+				<input type="button" id="dec-break" class="increase-decrease-time" value="-"/>
+			</h2>
+			<h2 class="set">
+				<span class="green">Session</span> 
+				<span>length</span>
+				<input type="button" id="inc-sesh" class="increase-decrease-time" value="+"/>
+				<span id="seshNum"> 25 </span> 
+				<input type="button" id="dec-sesh" class="increase-decrease-time" value="-"/>
+			</h2>
+		    </div>
+		    <div class="session-start-container">
+			<input type="button" id="pressStart" class="press-to-start" value="Press to start"/>
+			<h1 id="session-text" class="session-text">Session</h1>
+			<div id="showtime"class="time-reset-container">
+			    <span id="time" class="time">25:<span id="seconds">00</span></span>
+			</div>
+		    </div>
+		    <audio id="beep" src="http://soundbible.com/mp3/analog-watch-alarm_daniel-simion.mp3"></audio>            
+		</div>
+        	<script type="text/javascript" src="pomodoro.js"></script>
 	</body>
 </html>
