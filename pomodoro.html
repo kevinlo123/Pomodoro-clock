@@ -14,19 +14,30 @@
                 <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
             </div>
             <div class="time-set-container">
-                <h2 class="set"><span class="green">Break</span> length<input type="button" id="inc-break" class="increase-decrease-time" value="+"> </input> <span id="breakNum"> 5 </span> <input type="button" id="dec-break" class="increase-decrease-time" value="-"> </input></h2>
-                <h2 class="set"><span class="green">Session</span> length<input type="button" id="inc-sesh" class="increase-decrease-time" value="+"></input> <span id="seshNum"> 25 </span> <input type="button" id="dec-sesh" class="increase-decrease-time" value="-"></input></h2>
+                <h2 class="set">
+					<span class="green">Break</span>
+					<span>length</span>
+					<input type="button" id="inc-break" class="increase-decrease-time" value="+"/>
+					<span id="breakNum"> 5 </span> 
+					<input type="button" id="dec-break" class="increase-decrease-time" value="-"/>
+				</h2>
+                <h2 class="set">
+					<span class="green">Session</span> 
+					<span>length</span>
+					<input type="button" id="inc-sesh" class="increase-decrease-time" value="+"/>
+					<span id="seshNum"> 25 </span> 
+					<input type="button" id="dec-sesh" class="increase-decrease-time" value="-"/>
+				</h2>
             </div>
             <div class="session-start-container">
-                <input type="button" id="pressStart" class="press-to-start" value="Press to start"></input>
+                <input type="button" id="pressStart" class="press-to-start" value="Press to start"/>
                 <h1 id="session-text" class="session-text">Session</h1>
                 <div id="showtime"class="time-reset-container">
                     <span id="time" class="time">25:<span id="seconds">00</span></span>
-                    <!--<button class="reset-button">reset</button>-->
                 </div>
             </div>
             <audio id="beep" src="http://soundbible.com/mp3/analog-watch-alarm_daniel-simion.mp3"></audio>            
         </div>
-    <script type="text/javascript" src="pomodoro.js"></script>
+        <script type="text/javascript" src="pomodoro.js"></script>
 	</body>
 </html>
