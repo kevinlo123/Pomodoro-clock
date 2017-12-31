@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded" , () => {
         let result = parseFloat(timeUserSetting);
         result += -1;  
         let secs = 60;
-        const watch = setInterval(function(){
+        const watch = setInterval(() => {
             secs--;
             if(secs === -1){
                 secs = 60;
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded" , () => {
                 let parsedBreak = parseFloat(usersBreak);
                 let breakSeconds = 60;
                 parsedBreak += -1;
-                const breakSession =  setInterval(function(){
+                const breakSession =  setInterval(() => {
                 breakSeconds--;
                 if(breakSeconds === -1){
                     breakSeconds = 60;
@@ -73,6 +73,13 @@ document.addEventListener("DOMContentLoaded" , () => {
                 if(parsedBreak <= 0 && breakSeconds === 0){
                     window.clearInterval(breakSession);
                     document.getElementById("beep").play();
+                    document.getElementById("showtime").style.display = "none";
+                    document.getElementById("pressStart").style.display = "none";
+                    document.getElementById("session-text").innerHTML = "Times up!";
+                    document.getElementById("session-text").style.padding = "0";                    
+                    document.getElementById("reset-button").addEventListener("click" , () => {
+                        window.parent.location = window.parent.location.href;
+                    });                   
                 }
                     document.getElementById("showtime").innerHTML =  parsedBreak + ":" + breakSeconds;
                 },1000);

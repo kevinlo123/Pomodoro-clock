@@ -15,6 +15,11 @@ body {
     padding: 0;
 }
 
+input{
+    border: none;
+    border-radius: 0;
+}
+
 .main-container {
     display: flex;
     flex-flow: column;
@@ -90,21 +95,22 @@ body {
 .time-reset-container {
     display: flex;
     flex-flow: column;
-    width: 50%;
+    text-align: center;
     margin: 0 auto;
     font-size: 5rem;
 }
 
 .time {
-    font-size: 4.5rem;
+    font-size: 5rem;
 }
 
-.reset-button {
+#reset-button {
     width: 50%;
     margin: 0 auto;
     height: 3rem;
     position: relative;
     top: 2.5rem;
+    display: block;
 }
 /************ MEDIA QUERIES *************/
 
@@ -159,24 +165,80 @@ body {
         width: 75%;
     }
     .time-set-container{
-        flex-direction: column;
+        font-size: 1rem;
+        justify-content: space-around;
+    }
+
+    .set{
+        margin: 0 0 1rem 0;
     }
 }
 
-@media only screen and (max-width : 490px) {
+@media only screen and (max-width : 525px) {
     .session-start-container{
-        width: 85%;
+        width: 65%;
         height: 20rem;
     }
-    .press-to-start{
-        font-size: 1.75rem;
+
+    .press-to-start {
+        font-size: 1.5rem;
+    }
+
+    .session-text {
+        font-size: 1.5rem;
     }
 }
 
-@media only screen and (max-width : 460px) {
+@media only screen and (max-width : 465px) {
     .time-set-container{
-        font-size: 1rem;
-        flex-direction: row;
+        flex-flow: column;
+    }
+
+    .session-start-container{
+        height: 18rem;
+    }
+
+    .set{
+        margin: -.75rem 0 1.5rem 0;
     }
 }
+
+@media only screen and (max-width : 400px) {
+
+    .pomodoro-text{
+        margin-left: 1rem;
+        font-size: 2.3rem;
+    }
+
+    .fa {
+        margin: 1.5rem 0rem;
+    }
+
+    .session-start-container{
+        width: 75%;
+    }
+    .time{
+        right: 1.5rem;
+    }
+    .title-clock-container{
+        justify-content: space-around;
+    }
+}  
+
+@media only screen and (max-width : 350px) {
+
+    .session-start-container{
+        height: 16rem;
+    }
+
+    .time {
+        font-size: 4rem;
+    }
+
+    .time-reset-container {
+        font-size: 4rem;
+    }
+
+} 
+
 
